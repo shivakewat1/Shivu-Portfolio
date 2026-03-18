@@ -3,6 +3,12 @@ import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { FiAward, FiExternalLink, FiX, FiCalendar, FiCheckCircle } from 'react-icons/fi'
 import aiForBharat from '../assets/Certificates/AI_for_Bharat.png'
 import certSC from '../assets/Certificates/Certificate_SC-EAB3B8879E.png'
+import internshipImg from '../assets/Certificates/Internship.png'
+import mernImg from '../assets/Certificates/Mern.png'
+import pythonImg from '../assets/Certificates/Python fundamental.png'
+import genaiImg from '../assets/Certificates/Shivakewat_GenAI_completion_certificate.png'
+import completionImg from '../assets/Certificates/shiva_completion_certificate.png'
+import cloudImg from '../assets/Certificates/cloud.png'
 
 const certificates = [
   {
@@ -32,9 +38,9 @@ const certificates = [
     issuer: 'Internship Program',
     date: '2024',
     tags: ['Internship', 'Web Development', 'Real World Experience'],
-    image: null,
-    file: '/certificates/Internship.pdf',
-    type: 'pdf',
+    image: internshipImg,
+    file: internshipImg,
+    type: 'image',
     featured: true,
     emoji: '🏢',
   },
@@ -43,9 +49,9 @@ const certificates = [
     issuer: 'Certification Authority',
     date: '2024',
     tags: ['MongoDB', 'Express', 'React', 'Node.js'],
-    image: null,
-    file: '/certificates/Mern.pdf',
-    type: 'pdf',
+    image: mernImg,
+    file: mernImg,
+    type: 'image',
     featured: true,
     emoji: '⚡',
   },
@@ -54,9 +60,9 @@ const certificates = [
     issuer: 'Python Institute',
     date: '2024',
     tags: ['Python', 'Programming', 'Data Structures'],
-    image: null,
-    file: '/certificates/Python fundamental.pdf',
-    type: 'pdf',
+    image: pythonImg,
+    file: pythonImg,
+    type: 'image',
     featured: false,
     emoji: '🐍',
   },
@@ -65,9 +71,9 @@ const certificates = [
     issuer: 'AI Certification Body',
     date: '2024',
     tags: ['Generative AI', 'LLMs', 'Prompt Engineering'],
-    image: null,
-    file: '/certificates/Shivakewat_GenAI_completion_certificate.pdf',
-    type: 'pdf',
+    image: genaiImg,
+    file: genaiImg,
+    type: 'image',
     featured: true,
     emoji: '🧠',
   },
@@ -76,22 +82,22 @@ const certificates = [
     issuer: 'Training Program',
     date: '2024',
     tags: ['Full Stack', 'Web Development'],
-    image: null,
-    file: '/certificates/shiva_completion_certificate.pdf',
-    type: 'pdf',
+    image: completionImg,
+    file: completionImg,
+    type: 'image',
     featured: false,
     emoji: '🎓',
   },
   {
-    title: 'Development Certificate',
-    issuer: 'Tech Institute',
+    title: 'Cloud Certificate',
+    issuer: 'Cloud Platform',
     date: '2024',
-    tags: ['Software Development', 'Best Practices'],
-    image: null,
-    file: '/certificates/1-6fb7e253-ee46-45dc-ab02-e85e3f71af6d (2).pdf',
-    type: 'pdf',
+    tags: ['Cloud Computing', 'DevOps'],
+    image: cloudImg,
+    file: cloudImg,
+    type: 'image',
     featured: false,
-    emoji: '💻',
+    emoji: '☁️',
   },
 ]
 
