@@ -1,8 +1,8 @@
 import { useRef, useState } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { FiAward, FiExternalLink, FiX, FiCalendar, FiCheckCircle } from 'react-icons/fi'
-import aiForBharat from '../assets/certificates/AI_for_Bharat.png'
-import certSC from '../assets/certificates/Certificate_SC-EAB3B8879E.png'
+import aiForBharat from '../assets/Certificates/AI_for_Bharat.png'
+import certSC from '../assets/Certificates/Certificate_SC-EAB3B8879E.png'
 
 const certificates = [
   {
