@@ -28,6 +28,17 @@ const certificates = [
     emoji: '🏅',
   },
   {
+    title: 'Internship Certificate',
+    issuer: 'Internship Program',
+    date: '2024',
+    tags: ['Internship', 'Web Development', 'Real World Experience'],
+    image: null,
+    file: '/certificates/Internship.pdf',
+    type: 'pdf',
+    featured: true,
+    emoji: '🏢',
+  },
+  {
     title: 'MERN Stack Development',
     issuer: 'Certification Authority',
     date: '2024',

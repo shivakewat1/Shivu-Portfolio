@@ -1,13 +1,13 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import shivaImg from '../assets/shiva.png'
+import shivaImg from '../assets/myprofile.jpeg'
 import { FiCode, FiCoffee, FiZap, FiHeart, FiAward, FiUsers, FiGitCommit, FiFolder, FiDownload, FiArrowRight } from 'react-icons/fi'
 
 const stats = [
   { value: '2+', label: 'Years Exp.', icon: FiAward },
-  { value: '30+', label: 'Projects', icon: FiFolder },
-  { value: '15+', label: 'Clients', icon: FiUsers },
-  { value: '5K+', label: 'Commits', icon: FiGitCommit },
+  { value: '3+', label: 'Projects', icon: FiFolder },
+  { value: '2+', label: 'Clients', icon: FiUsers },
+  { value: '150+', label: 'Commits', icon: FiGitCommit },
 ]
 
 const traits = [
@@ -18,10 +18,10 @@ const traits = [
 ]
 
 const timeline = [
-  { year: '2022', title: 'First Line of Code', desc: 'HTML → CSS → JS. Fell in love instantly.' },
-  { year: '2023', title: 'MERN Stack + Freelance', desc: 'Built real apps, served real clients.' },
-  { year: '2024', title: 'AI & SaaS Builder', desc: 'Shipped Toolzy AI & Vaani with OpenAI.' },
-  { year: '2025', title: 'Scaling Up', desc: '30+ projects, 5K+ commits, still going.' },
+  { year: '2023', title: 'First Line of Code', desc: 'HTML → CSS → JS. Fell in love instantly.' },
+  { year: '2024', title: 'MERN Stack + Freelance', desc: 'Built real apps, served real clients.' },
+  { year: '2025', title: 'AI & SaaS Builder', desc: 'Shipped Toolzy AI & Vaani with OpenAI.' },
+  { year: '2026', title: 'Scaling Up', desc: '3+ projects, 150+ commits, still going.' },
 ]
 
 export default function About() {
