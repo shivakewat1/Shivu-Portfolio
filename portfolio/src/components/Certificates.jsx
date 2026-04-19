@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
-import { FiAward, FiExternalLink, FiX, FiCalendar, FiCheckCircle } from 'react-icons/fi'
+import { Award, ExternalLink, X, Calendar, CheckCircle } from 'lucide-react'
 import aiForBharat from '../assets/Certificates/AI_for_Bharat.png'
 import certSC from '../assets/Certificates/Certificate_SC-EAB3B8879E.png'
 import internshipImg from '../assets/Certificates/Internship.png'
@@ -137,7 +137,7 @@ function Modal({ cert, onClose }) {
                 <div className="flex items-center gap-3 mt-1">
                   <span className="text-xs" style={{ color: '#5a5a5a' }}>{cert.issuer}</span>
                   <span className="flex items-center gap-1 text-xs" style={{ color: '#4a4a4a' }}>
-                    <FiCalendar size={10} /> {cert.date}
+                    <Calendar size={10} /> {cert.date}
                   </span>
                 </div>
               </div>
@@ -149,7 +149,7 @@ function Modal({ cert, onClose }) {
                 className="flex items-center gap-1.5 text-xs px-4 py-2 rounded-full font-semibold"
                 style={{ background: 'linear-gradient(135deg, #C9B59C, #a08060)', color: '#080808' }}
               >
-                <FiExternalLink size={12} /> Open
+                <ExternalLink size={12} /> Open
               </motion.a>
               <button onClick={onClose}
                 className="w-9 h-9 rounded-full flex items-center justify-center transition-colors"
@@ -255,7 +255,7 @@ function CertCard({ cert, index, inView, onClick }) {
         >
           <div className="flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-sm"
             style={{ background: 'linear-gradient(135deg, #C9B59C, #a08060)', color: '#080808' }}>
-            <FiAward size={15} /> View Certificate
+            <Award size={15} /> View Certificate
           </div>
         </motion.div>
 
@@ -285,7 +285,7 @@ function CertCard({ cert, index, inView, onClick }) {
           <div className="min-w-0">
             <h3 className="font-bold text-sm leading-snug" style={{ color: '#e8ddd0' }}>{cert.title}</h3>
             <div className="flex items-center gap-2 mt-1">
-              <FiCheckCircle size={11} style={{ color: '#C9B59C', flexShrink: 0 }} />
+              <CheckCircle size={11} style={{ color: '#C9B59C', flexShrink: 0 }} />
               <span className="text-xs truncate" style={{ color: '#4a4a4a' }}>{cert.issuer}</span>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
-import { FiGithub, FiExternalLink, FiArrowRight, FiX } from 'react-icons/fi'
+import { Github, ExternalLink, ArrowRight, X } from 'lucide-react'
 import toolzyImg from '../assets/toolzy.png'
 import vaaniImg from '../assets/vaani.png'
 
@@ -118,7 +118,7 @@ function Modal({ project, onClose }) {
                     className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-semibold transition-all"
                     style={{ background: 'rgba(201,181,156,0.08)', color: '#C9B59C', border: '1px solid rgba(201,181,156,0.15)' }}
                   >
-                    <FiGithub size={15} /> GitHub
+                    <Github size={15} /> GitHub
                   </a>
                   <a
                     href={project.live}
@@ -126,7 +126,7 @@ function Modal({ project, onClose }) {
                     rel="noopener noreferrer"
                     className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-bold btn-primary transition-all"
                   >
-                    <FiExternalLink size={15} /> Live Demo
+                    <ExternalLink size={15} /> Live Demo
                   </a>
                 </div>
               </div>
@@ -274,7 +274,7 @@ export default function Projects() {
             className="inline-flex items-center gap-2 text-sm font-medium"
             style={{ color: '#5a5a5a' }}
           >
-            View all on GitHub <FiArrowRight size={14} />
+            View all on GitHub <ArrowRight size={14} />
           </a>
         </motion.div>
       </div>

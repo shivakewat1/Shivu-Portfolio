@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
-import { FiGithub, FiLinkedin, FiTwitter, FiHeart, FiArrowUp } from 'react-icons/fi'
+import { Github, Linkedin, Twitter, Heart, ArrowUp } from 'lucide-react'
 
 const socials = [
-  { icon: FiGithub, href: 'https://github.com/shivakewat1', label: 'GitHub' },
-  { icon: FiLinkedin, href: 'https://www.linkedin.com/in/shiva-kewat09/', label: 'LinkedIn' },
-  { icon: FiTwitter, href: 'https://twitter.com', label: 'Twitter' },
+  { icon: Github, href: 'https://github.com/shivakewat1', label: 'GitHub' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/shiva-kewat09/', label: 'LinkedIn' },
+  { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
 ]
 
 const links = ['Home', 'About', 'Skills', 'Projects', 'Certificates', 'Contact']
@@ -49,12 +49,12 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8"
           style={{ borderTop: '1px solid rgba(201,181,156,0.06)' }}>
           <p className="text-xs flex items-center gap-1.5" style={{ color: '#2a2a2a' }}>
-            Made with <FiHeart size={12} style={{ color: '#C9B59C' }} /> by Shiva &copy; {new Date().getFullYear()}
+            Made with <Heart size={12} style={{ color: '#C9B59C' }} /> by Shiva &copy; {new Date().getFullYear()}
           </p>
           <motion.a href="#home" whileHover={{ scale: 1.1, y: -2 }} whileTap={{ scale: 0.9 }}
             className="w-9 h-9 rounded-full glass glass-hover flex items-center justify-center transition-all"
             style={{ color: '#C9B59C' }} aria-label="Back to top">
-            <FiArrowUp size={15} />
+            <ArrowUp size={15} />
           </motion.a>
         </div>
       </div>

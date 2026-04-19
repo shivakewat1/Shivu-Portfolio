@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FiGithub, FiLinkedin, FiTwitter, FiDownload, FiArrowRight } from 'react-icons/fi'
+import { Github, Linkedin, Twitter, Download, ArrowRight } from 'lucide-react'
 
 const socials = [
-  { icon: FiGithub, href: 'https://github.com/shivakewat1', label: 'GitHub' },
-  { icon: FiLinkedin, href: 'https://www.linkedin.com/in/shiva-kewat09/', label: 'LinkedIn' },
-  { icon: FiTwitter, href: 'https://twitter.com', label: 'Twitter' },
+  { icon: Github, href: 'https://github.com/shivakewat1', label: 'GitHub' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/shiva-kewat09/', label: 'LinkedIn' },
+  { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
 ]
 
 const roles = ['Full Stack Developer', 'React Specialist', 'UI/UX Enthusiast', 'Problem Solver']
@@ -91,13 +91,13 @@ export default function Hero() {
           <motion.a href="#projects"
             whileHover={{ scale: 1.05, boxShadow: '0 0 40px rgba(201,181,156,0.4)' }} whileTap={{ scale: 0.95 }}
             className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-full btn-primary text-sm sm:text-base flex items-center justify-center gap-2">
-            View My Work <FiArrowRight size={15} />
+            View My Work <ArrowRight size={15} />
           </motion.a>
           <motion.a href="/resume.pdf" download="Shiva_Resume.pdf"
             whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
             className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-full glass glass-hover font-semibold text-sm sm:text-base flex items-center justify-center gap-2 transition-all"
             style={{ color: '#C9B59C' }}>
-            <FiDownload size={15} /> Download CV
+            <Download size={15} /> Download CV
           </motion.a>
         </motion.div>
 

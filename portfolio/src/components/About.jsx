@@ -1,20 +1,20 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import shivaImg from '../assets/myprofile.jpeg'
-import { FiCode, FiCoffee, FiZap, FiHeart, FiAward, FiUsers, FiGitCommit, FiFolder, FiDownload, FiArrowRight } from 'react-icons/fi'
+import { Code, Coffee, Zap, Heart, Award, Users, GitCommit, Folder, Download, ArrowRight } from 'lucide-react'
 
 const stats = [
-  { value: '2+', label: 'Years Exp.', icon: FiAward },
-  { value: '3+', label: 'Projects', icon: FiFolder },
-  { value: '2+', label: 'Clients', icon: FiUsers },
-  { value: '150+', label: 'Commits', icon: FiGitCommit },
+  { value: '2+', label: 'Years Exp.', icon: Award },
+  { value: '3+', label: 'Projects', icon: Folder },
+  { value: '2+', label: 'Clients', icon: Users },
+  { value: '150+', label: 'Commits', icon: GitCommit },
 ]
 
 const traits = [
-  { icon: FiCode, text: 'Clean Code Advocate' },
-  { icon: FiCoffee, text: 'Coffee Powered Dev' },
-  { icon: FiZap, text: 'Performance Obsessed' },
-  { icon: FiHeart, text: 'Open Source Lover' },
+  { icon: Code, text: 'Clean Code Advocate' },
+  { icon: Coffee, text: 'Coffee Powered Dev' },
+  { icon: Zap, text: 'Performance Obsessed' },
+  { icon: Heart, text: 'Open Source Lover' },
 ]
 
 const timeline = [
@@ -126,13 +126,13 @@ export default function About() {
                 whileHover={{ scale: 1.05, boxShadow: '0 0 25px rgba(201,181,156,0.3)' }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full btn-primary text-sm">
-                Let&apos;s Talk <FiArrowRight size={14} />
+                Let&apos;s Talk <ArrowRight size={14} />
               </motion.a>
               <motion.a href="/resume.pdf" download="Shiva_Resume.pdf"
                 whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full glass glass-hover text-sm transition-all"
                 style={{ color: '#C9B59C' }}>
-                <FiDownload size={14} /> Resume
+                <Download size={14} /> Resume
               </motion.a>
             </div>
           </motion.div>

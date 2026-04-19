@@ -1,17 +1,17 @@
 import { useState, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { FiMail, FiMapPin, FiPhone, FiSend, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
+import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter } from 'lucide-react'
 
 const contactInfo = [
-  { icon: FiMail, label: 'Email', value: 'shivakewat.3537@gmail.com', href: 'mailto:shivakewat.3537@gmail.com' },
-  { icon: FiPhone, label: 'Phone', value: '+91 81205 93537', href: 'tel:+918120593537' },
-  { icon: FiMapPin, label: 'Location', value: 'India 🇮🇳', href: '#' },
+  { icon: Mail, label: 'Email', value: 'shivakewat.3537@gmail.com', href: 'mailto:shivakewat.3537@gmail.com' },
+  { icon: Phone, label: 'Phone', value: '+91 81205 93537', href: 'tel:+918120593537' },
+  { icon: MapPin, label: 'Location', value: 'India 🇮🇳', href: '#' },
 ]
 
 const socials = [
-  { icon: FiGithub, href: 'https://github.com/shivakewat1', label: 'GitHub' },
-  { icon: FiLinkedin, href: 'https://www.linkedin.com/in/shiva-kewat09/', label: 'LinkedIn' },
-  { icon: FiTwitter, href: 'https://twitter.com', label: 'Twitter' },
+  { icon: Github, href: 'https://github.com/shivakewat1', label: 'GitHub' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/shiva-kewat09/', label: 'LinkedIn' },
+  { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
 ]
 
 export default function Contact() {
@@ -142,7 +142,7 @@ export default function Contact() {
                 whileHover={{ scale: 1.02, boxShadow: '0 0 30px rgba(201,181,156,0.3)' }}
                 whileTap={{ scale: 0.98 }}
                 className="w-full py-4 rounded-xl btn-primary flex items-center justify-center gap-2 text-sm font-bold transition-all">
-                {sent ? <><span>✓</span> Message Sent!</> : <><FiSend size={15} /> Send Message</>}
+                {sent ? <><span>✓</span> Message Sent!</> : <><Send size={15} /> Send Message</>}
               </motion.button>
             </form>
           </motion.div>
