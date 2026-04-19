@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Github, Linkedin, Twitter, Download, ArrowRight } from 'lucide-react'
+import { Download, ArrowRight } from 'lucide-react'
+import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
 const socials = [
-  { icon: Github, href: 'https://github.com/shivakewat1', label: 'GitHub' },
-  { icon: Linkedin, href: 'https://www.linkedin.com/in/shiva-kewat09/', label: 'LinkedIn' },
-  { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+  { icon: FiGithub, href: 'https://github.com/shivakewat1', label: 'GitHub' },
+  { icon: FiLinkedin, href: 'https://www.linkedin.com/in/shiva-kewat09/', label: 'LinkedIn' },
+  { icon: FiTwitter, href: 'https://twitter.com', label: 'Twitter' },
 ]
 
 const roles = ['Full Stack Developer', 'React Specialist', 'UI/UX Enthusiast', 'Problem Solver']

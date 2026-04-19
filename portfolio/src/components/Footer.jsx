@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion'
-import { Github, Linkedin, Twitter, Heart, ArrowUp } from 'lucide-react'
+import { Heart, ArrowUp } from 'lucide-react'
+import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
 const socials = [
-  { icon: Github, href: 'https://github.com/shivakewat1', label: 'GitHub' },
-  { icon: Linkedin, href: 'https://www.linkedin.com/in/shiva-kewat09/', label: 'LinkedIn' },
-  { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+  { icon: FiGithub, href: 'https://github.com/shivakewat1', label: 'GitHub' },
+  { icon: FiLinkedin, href: 'https://www.linkedin.com/in/shiva-kewat09/', label: 'LinkedIn' },
+  { icon: FiTwitter, href: 'https://twitter.com', label: 'Twitter' },
 ]
 
 const links = ['Home', 'About', 'Skills', 'Projects', 'Certificates', 'Contact']

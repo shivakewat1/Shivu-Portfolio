@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter } from 'lucide-react'
+import { Mail, MapPin, Phone, Send } from 'lucide-react'
+import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
 const contactInfo = [
   { icon: Mail, label: 'Email', value: 'shivakewat.3537@gmail.com', href: 'mailto:shivakewat.3537@gmail.com' },
@@ -9,9 +10,9 @@ const contactInfo = [
 ]
 
 const socials = [
-  { icon: Github, href: 'https://github.com/shivakewat1', label: 'GitHub' },
-  { icon: Linkedin, href: 'https://www.linkedin.com/in/shiva-kewat09/', label: 'LinkedIn' },
-  { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+  { icon: FiGithub, href: 'https://github.com/shivakewat1', label: 'GitHub' },
+  { icon: FiLinkedin, href: 'https://www.linkedin.com/in/shiva-kewat09/', label: 'LinkedIn' },
+  { icon: FiTwitter, href: 'https://twitter.com', label: 'Twitter' },
 ]
 
 export default function Contact() {

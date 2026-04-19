@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { Award, ExternalLink, X, Calendar, CheckCircle } from 'lucide-react'
+import { FiX } from 'react-icons/fi'
 import aiForBharat from '../assets/Certificates/AI_for_Bharat.png'
 import certSC from '../assets/Certificates/Certificate_SC-EAB3B8879E.png'
 import internshipImg from '../assets/Certificates/Internship.png'

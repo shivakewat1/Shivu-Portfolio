@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
-import { Github, ExternalLink, ArrowRight, X } from 'lucide-react'
+import { ExternalLink, ArrowRight } from 'lucide-react'
+import { FiGithub, FiX } from 'react-icons/fi'
 import toolzyImg from '../assets/toolzy.png'
 import vaaniImg from '../assets/vaani.png'
 
@@ -118,7 +119,7 @@ function Modal({ project, onClose }) {
                     className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-semibold transition-all"
                     style={{ background: 'rgba(201,181,156,0.08)', color: '#C9B59C', border: '1px solid rgba(201,181,156,0.15)' }}
                   >
-                    <Github size={15} /> GitHub
+                    <FiGithub size={15} /> GitHub
                   </a>
                   <a
                     href={project.live}
