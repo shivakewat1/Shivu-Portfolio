@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
-import { Award, ExternalLink, X, Calendar, CheckCircle } from 'lucide-react'
-import { FiX } from 'react-icons/fi'
+import { Award, ExternalLink, X, Calendar, CheckCircle, Bot, Medal, Building2, Layers, Code2, Brain, GraduationCap, Cloud } from 'lucide-react'
 import aiForBharat from '../assets/Certificates/AI_for_Bharat.png'
 import certSC from '../assets/Certificates/Certificate_SC-EAB3B8879E.png'
 import internshipImg from '../assets/Certificates/Internship.png'
@@ -21,7 +20,7 @@ const certificates = [
     file: aiForBharat,
     type: 'image',
     featured: true,
-    emoji: '🤖',
+    icon: Bot,
   },
   {
     title: 'Skill Certificate',
@@ -32,7 +31,7 @@ const certificates = [
     file: certSC,
     type: 'image',
     featured: false,
-    emoji: '🏅',
+    icon: Medal,
   },
   {
     title: 'Internship Certificate',
@@ -43,7 +42,7 @@ const certificates = [
     file: internshipImg,
     type: 'image',
     featured: true,
-    emoji: '🏢',
+    icon: Building2,
   },
   {
     title: 'MERN Stack Development',
@@ -54,7 +53,7 @@ const certificates = [
     file: mernImg,
     type: 'image',
     featured: true,
-    emoji: '⚡',
+    icon: Layers,
   },
   {
     title: 'Python Fundamentals',
@@ -65,7 +64,7 @@ const certificates = [
     file: pythonImg,
     type: 'image',
     featured: false,
-    emoji: '🐍',
+    icon: Code2,
   },
   {
     title: 'Generative AI',
@@ -76,7 +75,7 @@ const certificates = [
     file: genaiImg,
     type: 'image',
     featured: true,
-    emoji: '🧠',
+    icon: Brain,
   },
   {
     title: 'Completion Certificate',
@@ -87,7 +86,7 @@ const certificates = [
     file: completionImg,
     type: 'image',
     featured: false,
-    emoji: '🎓',
+    icon: GraduationCap,
   },
   {
     title: 'Cloud Certificate',
@@ -98,7 +97,7 @@ const certificates = [
     file: cloudImg,
     type: 'image',
     featured: false,
-    emoji: '☁️',
+    icon: Cloud,
   },
 ]
 
@@ -129,9 +128,9 @@ function Modal({ cert, onClose }) {
           {/* Header */}
           <div className="flex items-center justify-between px-4 sm:px-6 py-3 sm:py-5" style={{ borderBottom: '1px solid rgba(201,181,156,0.07)' }}>
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-2xl"
+              <div className="w-12 h-12 rounded-2xl flex items-center justify-center"
                 style={{ background: 'rgba(201,181,156,0.08)', border: '1px solid rgba(201,181,156,0.15)' }}>
-                {cert.emoji}
+                {cert.icon && <cert.icon size={22} style={{ color: '#C9B59C' }} />}
               </div>
               <div>
                 <h3 className="font-black text-lg leading-tight" style={{ color: '#e8ddd0' }}>{cert.title}</h3>
@@ -155,7 +154,7 @@ function Modal({ cert, onClose }) {
               <button onClick={onClose}
                 className="w-9 h-9 rounded-full flex items-center justify-center transition-colors"
                 style={{ background: 'rgba(255,255,255,0.04)', color: '#6a6a6a', border: '1px solid rgba(255,255,255,0.06)' }}>
-                <FiX size={15} />
+                <X size={15} />
               </button>
             </div>
           </div>
@@ -279,9 +278,9 @@ function CertCard({ cert, index, inView, onClick }) {
       <div className="p-5">
         {/* Title row */}
         <div className="flex items-start gap-3 mb-3">
-          <div className="w-9 h-9 rounded-xl flex items-center justify-center text-lg shrink-0 mt-0.5"
+          <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 mt-0.5"
             style={{ background: 'rgba(201,181,156,0.08)', border: '1px solid rgba(201,181,156,0.1)' }}>
-            {cert.emoji}
+            {cert.icon && <cert.icon size={16} style={{ color: '#C9B59C' }} />}
           </div>
           <div className="min-w-0">
             <h3 className="font-bold text-sm leading-snug" style={{ color: '#e8ddd0' }}>{cert.title}</h3>
